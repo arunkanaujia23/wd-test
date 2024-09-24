@@ -2,22 +2,23 @@ import React from 'react'
 import styles from './about.module.scss'
 import TitleHeading from '../common/titleHeading/titleHeading'
 import Heading from '../common/heading/Heading'
+import Image from 'next/image'
 
 const About = () => {
     return (
         <div className={`${styles.aboutContainer}`}>
-            <div className='md:container md:mx-auto'>
+            <div className='sm:container sm:mx-auto'>
                 <div className={`${styles.about}`}>
                     <div className={`${styles.aboutImageWarper}`}>
                         <div className={`${styles.aboutImageBig}`}>
-                            <img src="https://images.pexels.com/photos/3330895/pexels-photo-3330895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                            <Image fill src="https://images.pexels.com/photos/3330895/pexels-photo-3330895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                         </div>
                         <div className={`${styles.aboutImageSmallWrapper}`}>
                             <div className={`${styles.aboutImageSmall}`}>
-                            <img src="https://images.pexels.com/photos/3330895/pexels-photo-3330895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                            <Image fill src="https://images.pexels.com/photos/3330895/pexels-photo-3330895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                             </div>
                             <div className={`${styles.aboutImageSmall}`}>
-                            <img src="https://images.pexels.com/photos/3330895/pexels-photo-3330895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                            <Image fill src="https://images.pexels.com/photos/3330895/pexels-photo-3330895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                             </div>
                         </div>
                     </div>

@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: 7fr 5fr;
     gap: 40px;
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: 1fr;
+    }
 }
 .aboutTextWrapper{
     display: flex;
@@ -15,27 +18,45 @@
     grid-template-columns: 7fr 5fr;
     gap: 16px;
     height: 100%;
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: 1fr;
+    }
     .aboutImageBig{
         border-radius: 16px;
         overflow: hidden;
         min-height:   500px;
+        position: relative;
+        @media screen and (max-width: 1280px) {
+            min-height:   250px;
+        }
         img{
-            min-height:   500px;
+           
             height: 500px;
             width: 100%;
             object-fit: cover;
+            @media screen and (max-width: 1280px) {
+                height: 100%;
+            }
         }
     }
     .aboutImageSmallWrapper{
         display: flex;
         flex-direction: column;
         gap: 16px;
+        @media screen and (max-width: 1280px) {
+            flex-direction: row;
+        }
         .aboutImageSmall{
             border-radius: 16px;
             overflow: hidden;
+            position: relative;
+            height: 240px;
+            @media screen and (max-width: 1280px) {
+                width: 50%;
+            }
             img{
     
-                height: 240px;
+                height: 100%;
                 width: 100%;
                 object-fit: cover;
             }
