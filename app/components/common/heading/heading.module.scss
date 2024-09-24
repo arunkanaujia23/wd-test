@@ -1,0 +1,14 @@
+@import '../../../assets/_variabls';
+
+.heading{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0em;
+    color: $textColor;
+    margin: 16px 0;
+
+    span{
+        color: $primaryColor
+    }
+}

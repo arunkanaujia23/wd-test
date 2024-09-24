@@ -1,0 +1,27 @@
+@import '../../../assets/_variabls';
+
+.titleHeading{
+    span{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: .2em;
+        color: $textColor;
+        text-transform: uppercase;
+        margin:  0 0 0 100px;
+        
+       position: relative;
+       &::after{
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: -100px;
+        width: 80px;
+        height: 2px;
+        background-color: $textColor;
+       }
+    }
+   
+  
+}

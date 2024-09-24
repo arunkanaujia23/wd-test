@@ -1,0 +1,90 @@
+@import '../../assets/_variabls';
+.about{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 40px;
+}
+.aboutTextWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aboutImageWarper{
+    position: relative;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 16px;
+    height: 100%;
+    .aboutImageBig{
+        border-radius: 16px;
+        overflow: hidden;
+        min-height:   500px;
+        img{
+            min-height:   500px;
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .aboutImageSmallWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .aboutImageSmall{
+            border-radius: 16px;
+            overflow: hidden;
+            img{
+    
+                height: 240px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+
+
+.para{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: $textColor;
+    margin: 12px 0;
+}
+.btnWrapper{
+    .btn{
+        // background-color: $primaryColor;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        border-radius: 50px;
+       
+        margin-top: 20px;
+       
+        display: flex;
+       
+        align-items: center;
+        height: 60px;
+        span{
+            font-size: 18px;
+            padding: 0 20px;
+        }
+        .btnIcon{
+            margin-left: 10px;
+            border: 1px solid $primaryColor;
+            border-radius: 50px;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                height: 30px;
+                width: 30px
+            }
+        }
+    }
+}

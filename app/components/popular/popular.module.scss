@@ -1,0 +1,136 @@
+@import "../../assets/_variabls";
+
+.popular {
+  margin: 50px 0;
+}
+
+.popularCoursesCard {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px -4px #0000006e;
+  max-width: 350px;
+  width: 100%;
+  .popularCoursesCardImage {
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+  .popularCoursesCardContent {
+    margin-top: 20px;
+    .popularCoursesCardTag {
+      color: $primaryColor;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .linkContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        color: $textColor;
+        font-size: 22px;
+        font-weight: 500;
+        text-decoration: none;
+        width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .popularCoursesCardPara {
+      color: #111;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 10px 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .popularCoursesCardRating{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .rating{
+            display: flex;
+            align-items: center;
+            color: $primaryColor;
+            gap: 8px;
+            .ratingStar{
+                display: flex;
+                gap: 4px;
+                svg{
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+        .totalRating{
+            color: #ccc;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+    }
+
+    .popularCoursesCardFooter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+
+        .profile{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .profileImage{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .profileText{
+                .name{
+                    color: $textColor;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+                .number{
+                    color: #ccc;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+            }
+            
+        }
+        .price{
+            color: $primaryColor;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.5;
+        }
+    }
+  }
+}
